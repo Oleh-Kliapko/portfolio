@@ -1,7 +1,7 @@
 "use client";
 
+import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { Navigation, Pagination, Keyboard } from "swiper/modules";
 
 import "swiper/css";
@@ -13,7 +13,7 @@ import "swiper/css/keyboard";
 import { ServiceData, IServiceData } from "@/constants";
 import { Container } from "./Container";
 
-const ServiceSlider = () => {
+const ServiceSlider: FC = () => {
   return (
     <Container>
       <Swiper

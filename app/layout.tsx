@@ -6,11 +6,7 @@ import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
-interface CustomMetadata extends Metadata {
-  favicon?: string;
-}
-
-export const metadata: CustomMetadata = {
+export const metadata: Metadata = {
   title: "Portfolio Kliapko Oleh",
 };
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Keyboard } from "swiper/modules";
 
@@ -12,7 +13,7 @@ import "swiper/css/keyboard";
 import { Projects } from "@/constants";
 import { ProjectSliderCard } from "./ProjectSliderCard";
 
-const ProjectSlider = () => {
+const ProjectSlider: FC = () => {
   return (
     <Swiper
       breakpoints={{

@@ -1,10 +1,11 @@
+import { FC } from "react";
 import Link from "next/link";
 
 import { Social, ISocial } from "@/constants";
 import Navigation from "./Navigation";
 import { Container } from "./Container";
 
-const Navbar = () => {
+const Navbar: FC = () => {
   return (
     <Container
       as="header"

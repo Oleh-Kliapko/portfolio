@@ -224,7 +224,7 @@ export const Projects: IProject[] = [
   },
   {
     id: 6,
-    title: "Movie searcher - find your favorite movie",
+    title: "Filmoteka - the best movies of the world",
     links: [
       {
         git: "https://github.com/Allmaren/js_team_project",

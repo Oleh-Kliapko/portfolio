@@ -1,8 +1,9 @@
+import { FC } from "react";
+
 import { Container } from "@/components/Container";
 import ProjectSlider from "@/components/ProjectSlider";
-import React from "react";
 
-const Page = () => {
+const Page: FC = () => {
   return (
     <div className="flex justify-center gap-5 flex-col h-screen bg-[url('/assets/bg-my-projects.jpeg')] bg-cover">
       <Container as="section">

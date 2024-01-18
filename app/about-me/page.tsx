@@ -1,10 +1,10 @@
-import ServiceSlider from "@/components/ServiceSlider";
+import { FC } from "react";
 import Image from "next/image";
-import React from "react";
 
+import ServiceSlider from "@/components/ServiceSlider";
 import { Container } from "@/components/Container";
 
-const Page = () => {
+const Page: FC = () => {
   return (
     <div className="flex flex-col justify-center gap-10 bg-[url('/assets/bg-about-me.jpeg')] bg-cover h-screen">
       <Container as="section" containerStyle="flex flex-col gap-3 mt-40">

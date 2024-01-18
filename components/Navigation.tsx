@@ -1,13 +1,14 @@
 "use client";
 
-import React, { useState, useEffect, FC } from "react";
+import { useState, useEffect, FC } from "react";
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { NavLinks, INavLink } from "@/constants";
 import Link from "next/link";
+
+import { NavLinks, INavLink } from "@/constants";
 import Transition from "./Transition";
 
-const Navigation = () => {
+const Navigation: FC = () => {
   const path: string = usePathname();
 
   const [isRouting, setIsRouting] = useState<boolean>(false);

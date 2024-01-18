@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { FC, useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container, type ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
-const Particle = () => {
-  const [init, setInit] = useState(false);
+const Particle: FC = () => {
+  const [init, setInit] = useState<boolean>(false);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {

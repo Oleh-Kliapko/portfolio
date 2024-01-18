@@ -69,6 +69,7 @@ export const ProjectSliderCard: FC<ProjectProps> = ({ project }) => {
       </div>
       {enlargedImage !== null && (
         <ImageModal
+          projectId={id}
           imageUrl={images[enlargedImage]}
           onClose={() => setEnlargedImage(null)}
         />

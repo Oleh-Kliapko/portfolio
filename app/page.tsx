@@ -1,10 +1,12 @@
+import { FC } from "react";
 import Image from "next/image";
 
 import Particle from "@/components/Particle";
-import { myFace2, partBg } from "@/public/assets";
 import { Container } from "@/components/Container";
 
-export default function Home() {
+import { myFace2, partBg } from "@/public/assets";
+
+const Home: FC = () => {
   return (
     <main className="flex items-center h-screen relative bg-cover bg-[url('/assets/bg-home.png')]">
       <div className="absolute right-0 top-0 h-full w-[80%] z-[2]">
@@ -41,4 +43,6 @@ export default function Home() {
       </Container>
     </main>
   );
-}
+};
+
+export default Home;

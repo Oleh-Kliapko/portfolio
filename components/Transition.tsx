@@ -1,8 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { FC } from "react";
+import { motion, Variants } from "framer-motion";
 
-const TransitionVariants = {
+const TransitionVariants: Variants = {
   initial: {
     x: "100%",
     width: "100%",
@@ -17,7 +18,7 @@ const TransitionVariants = {
   },
 };
 
-const Transition = () => {
+const Transition: FC = () => {
   return (
     <div key="transition-key">
       <motion.div

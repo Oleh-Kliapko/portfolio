@@ -1,16 +1,25 @@
 "use client";
 
-import { FC, useEffect, MouseEventHandler, useCallback } from "react";
-import { createPortal } from "react-dom";
-import { FaTimes } from "react-icons/fa";
+import { MyInstagramLoader, MyLoader } from "@/helpers/SpinerLoader";
 import Image from "next/image";
+import { FC, useEffect, MouseEventHandler, useCallback, useState } from "react";
+import { createPortal } from "react-dom";
+
+import { FaTimes } from "react-icons/fa";
 
 interface ModalProps {
+  projectId: number;
   imageUrl: string;
   onClose: () => void;
 }
 
-export const ImageModal: FC<ModalProps> = ({ imageUrl, onClose }) => {
+export const ImageModal: FC<ModalProps> = ({
+  projectId,
+  imageUrl,
+  onClose,
+}) => {
+  const [loading, setLoading] = useState<boolean>(true);
+
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -36,17 +45,20 @@ export const ImageModal: FC<ModalProps> = ({ imageUrl, onClose }) => {
 
   return createPortal(
     <div className="modal-backdrop" onClick={handleBackdropClick}>
-      <div className="modal-content">
-        <button className="close-button" onClick={onClose}>
-          <FaTimes />
-        </button>
+      {loading && <MyInstagramLoader />}
+      <div className={!loading ? "modal-content" : " w-0 h-0"}>
+        {!loading && (
+          <button className="close-button" onClick={onClose}>
+            <FaTimes />
+          </button>
+        )}
         <Image
           src={imageUrl}
           alt="project screen"
-          width={1000}
-          height={1000}
+          width={projectId === 3 || projectId === 4 ? 400 : 1000}
+          height={projectId === 3 || projectId === 4 ? 1000 : 400}
           className="w-auto h-full object-cover"
-          loading="lazy"
+          onLoad={() => setLoading(false)}
         />
       </div>
     </div>,

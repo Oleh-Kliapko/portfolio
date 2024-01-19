@@ -11,16 +11,15 @@ const Page: FC = () => {
         <h1 className="text-5xl max-sm:text-4xl text-white font-semibold">
           My Skills<span className="text-red-500">.</span>
         </h1>
-        <div className="text-base max-sm:text-sm text-gray-200">
-          <p className="text-xl max-sm:text-base mb-2">
+        <div className="text-xl max-xl:text-base max-sm:text-sm text-gray-200">
+          <p className="text-2xl max-xl:text-xl max-sm:text-base mb-2">
             With good knowledge of JavaScript/TS, React, React Native, Redux,
-            NodeJS, Git, Web-sockets, Vite, I believe that my previous
-            experience within the financial sector provides me with significant
-            advantages:
+            NextJS, NodeJS, Git, Web-sockets, Vite, I am sure that my huge
+            experience give me follow benefits:
           </p>
           <p>
             1.{" "}
-            <span className="text-orange-300 font-semibold">
+            <span className="text-fuchsia-400 font-semibold">
               In-depth Financial Sector Knowledge
             </span>{" "}
             - crucial for developing software solutions connected with financial
@@ -28,7 +27,7 @@ const Page: FC = () => {
           </p>
           <p>
             2.{" "}
-            <span className="text-orange-300 font-semibold">
+            <span className="text-fuchsia-400 font-semibold">
               Strong soft skills
             </span>{" "}
             - this allows me to interact seamlessly with diverse teams,
@@ -36,7 +35,7 @@ const Page: FC = () => {
           </p>
           <p>
             3.{" "}
-            <span className="text-orange-300 font-semibold">
+            <span className="text-fuchsia-400 font-semibold">
               Deeper understanding of Customer Needs
             </span>{" "}
             - it allows me to optimize business processes.

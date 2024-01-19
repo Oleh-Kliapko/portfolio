@@ -20,8 +20,9 @@ const TransitionVariants: Variants = {
 
 const Transition: FC = () => {
   return (
-    <div key="transition-key">
+    <div key="parent">
       <motion.div
+        key="child1"
         className="fixed top-0 bottom-0 h-screen w-screen right-full z-[30] bg-yellow-800"
         variants={TransitionVariants}
         initial="initial"
@@ -30,6 +31,7 @@ const Transition: FC = () => {
         transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
       />
       <motion.div
+        key="child2"
         className="fixed top-0 bottom-0 h-screen w-screen right-full z-[20] bg-yellow-700"
         variants={TransitionVariants}
         initial="initial"
@@ -38,6 +40,7 @@ const Transition: FC = () => {
         transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
       />
       <motion.div
+        key="child3"
         className="fixed top-0 bottom-0 h-screen w-screen right-full z-[10] bg-yellow-600"
         variants={TransitionVariants}
         initial="initial"

@@ -8,7 +8,7 @@ import { myFace2, partBg } from "@/public/assets";
 
 const Home: FC = () => {
   return (
-    <main className="flex items-center h-screen relative bg-cover bg-[url('/assets/bg-home.png')]">
+    <main className="flex items-center h-screen relative bg-cover bg-[url('/assets/bg-home.jpg')]">
       <div className="absolute right-0 top-0 h-full w-[80%] z-[2]">
         <Particle />
       </div>
@@ -35,10 +35,11 @@ const Home: FC = () => {
           <span className="text-red-500">Lucius Annaeus Seneca</span>
         </div>
         <p className="text-[20px] max-sm:text-base max-sm:text-wrap text-gray-200 xl:text-gray-400 xl:pb-2 max-sm:pr-20 max-w-[400px]">
-          I am a Junior Full Stack Developer and focus on MERN technology, Redux
-          and English. I believe that my previous experience within the
-          financial sector provides me with significant advantages as a
-          developer for any company. Check out my projects and skills.
+          I am a Junior Full Stack Developer and focus on MERN technology and
+          can communicate in English (B1+). I believe that my previous
+          experience within the financial sector provides me with significant
+          advantages as a developer for any company. Check out my projects and
+          skills.
         </p>
       </Container>
     </main>

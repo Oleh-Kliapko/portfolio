@@ -34,11 +34,16 @@ const Navigation: FC = () => {
 
       return () => clearTimeout(timeout);
     }
-  }, [isRouting, path]);
+  }, [isRouting]);
 
   useEffect(() => {
     window.localStorage.setItem("activePage", activePage);
   }, [activePage]);
+
+  const handleLinkClick = (name: string) => {
+    setActivePage(name);
+    window.localStorage.setItem("activePage", name);
+  };
 
   return (
     <div
@@ -49,7 +54,7 @@ const Navigation: FC = () => {
         {isRouting && <Transition />}
         <nav className="flex gap-5 max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:h-full">
           {NavLinks.map(({ name, link, Icon }: INavLink) => (
-            <Link key={name} href={link} onClick={() => setActivePage(name)}>
+            <Link key={name} href={link} onClick={() => handleLinkClick(name)}>
               <Icon
                 className={`w-7 h-7 max-sm:w-6 max-sm:h-6 ${
                   activePage === name ? "text-orange-500" : "text-white"

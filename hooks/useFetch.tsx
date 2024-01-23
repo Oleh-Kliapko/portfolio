@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-import { GITHUB_TOKEN } from "@/constants";
+const GITHUB_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
 export const useFetch = () => {
   const [data, setData] = useState([]);

@@ -378,6 +378,3 @@ export interface IRepo {
   default_branch: string;
   toSorted(compareFn: (a: IRepo, b: IRepo) => number): IRepo[];
 }
-
-export const GITHUB_TOKEN =
-  "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";

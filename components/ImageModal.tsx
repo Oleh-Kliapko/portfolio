@@ -1,6 +1,6 @@
 "use client";
 
-import { MyInstagramLoader, MyLoader } from "@/helpers/SpinerLoader";
+import { MyInstagramLoader } from "@/helpers/SpinerLoader";
 import Image from "next/image";
 import { FC, useEffect, MouseEventHandler, useCallback, useState } from "react";
 import { createPortal } from "react-dom";

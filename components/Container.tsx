@@ -12,7 +12,11 @@ export const Container: FC<ContainerProps> = ({
   as: Component = "div",
 }) => {
   return (
-    <Component className={`px-24 xl:px-40 max-sm:px-16 ${containerStyle}`}>
+    <Component
+      className={`px-24 xl:px-40 max-sm:px-16 ${
+        containerStyle ? containerStyle : ""
+      }`}
+    >
       {children}
     </Component>
   );

@@ -8,7 +8,7 @@ const Page: FC = () => {
   return (
     <div className="flex flex-col justify-center gap-10 bg-[url('/assets/bg-about-me.jpeg')] bg-cover h-screen">
       <Container as="section" containerStyle="flex flex-col gap-3 mt-40">
-        <h1 className="text-5xl max-sm:text-4xl text-white font-semibold">
+        <h1 className="text-5xl max-sm:text-3xl text-white font-semibold mb-4">
           My Skills<span className="text-red-500">.</span>
         </h1>
         <div className="text-xl max-xl:text-base max-sm:text-sm text-gray-200">

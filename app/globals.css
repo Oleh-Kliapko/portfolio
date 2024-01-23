@@ -22,11 +22,11 @@
 }
 
 span.swiper-pagination-bullet {
-  @apply w-4 h-4 bg-orange-100;
+  @apply w-4 h-4 bg-orange-50;
 }
 
 span.swiper-pagination-bullet-active {
-  @apply bg-orange-600;
+  @apply bg-orange-400;
 }
 
 .modal-backdrop {

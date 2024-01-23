@@ -1,16 +1,16 @@
 import { FC } from "react";
 
 import { Container } from "@/components/Container";
-import ProjectSlider from "@/components/ProjectSlider";
+import AllProjects from "@/components/AllProjects";
 
 const Page: FC = () => {
   return (
-    <div className="flex justify-center gap-5 flex-col h-screen bg-[url('/assets/bg-my-projects.jpeg')] bg-cover">
+    <div className="flex justify-center gap-5 flex-col h-screen bg-[url('/assets/bg-all-projects.jpeg')] bg-cover">
       <Container as="section">
         <h1 className="text-[50px] text-white font-semibold whitespace-nowrap">
-          My favorite projects<span className="text-red-500">.</span>
+          My public projects<span className="text-red-500">.</span>
         </h1>
-        <ProjectSlider />
+        <AllProjects />
       </Container>
     </div>
   );

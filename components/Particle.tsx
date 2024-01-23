@@ -1,19 +1,22 @@
 "use client";
 
-import { FC, useEffect, useMemo, useState } from "react";
+import React, { FC, useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container, type ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
-const Particle: FC = () => {
+const Particle: FC = React.memo(() => {
   const [init, setInit] = useState<boolean>(false);
 
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
+    const initializeParticles = async () => {
+      await initParticlesEngine(async (engine) => {
+        await loadSlim(engine);
+      });
       setInit(true);
-    });
+    };
+
+    initializeParticles();
   }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {};
@@ -98,7 +101,9 @@ const Particle: FC = () => {
     );
   }
 
-  return <></>;
-};
+  return null;
+});
+
+Particle.displayName = "Particle";
 
 export default Particle;

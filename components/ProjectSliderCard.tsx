@@ -23,7 +23,7 @@ export const ProjectSliderCard: FC<ProjectProps> = ({ project }) => {
   return (
     <div className="flex flex-col">
       <h3 className=" text-orange-100 font-semibold text-2xl max-sm:text-lg mb-4">
-        {id !== 999 && `${id}.`} {title}
+        {id}. {title}
       </h3>
       <div className="flex justify-between mb-4">
         {links.map(({ git, website, description }) => (

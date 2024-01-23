@@ -11,7 +11,7 @@ import {
   RxBorderStyle,
   RxChatBubble,
 } from "react-icons/rx";
-import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaList, FaTelegram } from "react-icons/fa";
 
 export interface ISocial {
   Icon: IconType;
@@ -51,10 +51,15 @@ export const NavLinks: INavLink[] = [
     link: "/about-me",
   },
   {
-    name: "Projects",
+    name: "Favorite projects",
     Icon: RxDashboard,
     link: "/my-projects",
   },
+  // {
+  //   name: "All projects",
+  //   Icon: FaList,
+  //   link: "/all-projects",
+  // },
 ];
 
 export interface IServiceData {
@@ -254,19 +259,19 @@ export const Projects: IProject[] = [
       "/assets/projects/search-movies/movies-4.jpg",
     ],
   },
-  {
-    id: 999,
-    title: "... and more others",
-    links: [
-      {
-        git: "https://github.com/Oleh-Kliapko",
-      },
-    ],
-    images: [
-      "/assets/projects/SpaceCity1.jpeg",
-      "/assets/projects/SpaceCity2.jpeg",
-      "/assets/projects/SpaceCity3.jpeg",
-      "/assets/projects/SpaceCity.jpeg",
-    ],
-  },
+  // {
+  //   id: 999,
+  //   title: "... and more others",
+  //   links: [
+  //     {
+  //       git: "https://github.com/Oleh-Kliapko",
+  //     },
+  //   ],
+  //   images: [
+  //     "/assets/projects/SpaceCity1.jpeg",
+  //     "/assets/projects/SpaceCity2.jpeg",
+  //     "/assets/projects/SpaceCity3.jpeg",
+  //     "/assets/projects/SpaceCity.jpeg",
+  //   ],
+  // },
 ];

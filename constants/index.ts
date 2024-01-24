@@ -376,5 +376,6 @@ export interface IRepo {
   open_issues: number;
   watchers: number;
   default_branch: string;
-  toSorted(compareFn: (a: IRepo, b: IRepo) => number): IRepo[];
+  toSorted?(compareFn: (a: IRepo, b: IRepo) => number): IRepo[];
+  repoLogoUrl?: string;
 }

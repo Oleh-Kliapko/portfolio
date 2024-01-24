@@ -55,7 +55,7 @@ const Home: FC = () => {
         className="absolute left-0 top-0"
       />
       <Container as="section" containerStyle="flex flex-col gap-8 z-[10]">
-        <div className="max-sm:text-wrap text-gray-200 xl:text-gray-400 xl:pb-2 max-sm:pr-20 max-w-[600px]">
+        <div className="max-sm:text-wrap text-gray-200 xl:text-gray-400 xl:pb-2 max-sm:pr-20 max-w-[650px]">
           <h2 className="text-3xl max-sm:text-xl sm:flex sm:flex-col mb-8">
             <span>I am a </span>
             <div>
@@ -66,10 +66,14 @@ const Home: FC = () => {
             </div>
           </h2>
           <div className="text-xl max-sm:text-base text-justify">
-            Focus on MERN technology and can communicate in English (B1+). I
-            believe that my previous experience within the financial sector
-            provides me with significant advantages as a developer for any
-            company. Check out my projects and skills.
+            <p className="mb-2">
+              I focus on MERN technology and can communicate in English (B1+).
+            </p>
+            <p>
+              I believe that my previous experience within the financial sector
+              provides me with significant advantages as a developer for any
+              company. Check out my projects and skills.
+            </p>
           </div>
         </div>
         <div className="max-w-[550px]">

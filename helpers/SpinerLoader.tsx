@@ -1,11 +1,12 @@
 import ContentLoader, { Facebook, Instagram } from "react-content-loader";
 
-export const MyLoader = () => (
-  <ContentLoader title="Loading... Please wait" width={400} height={400} />
-);
+export const MyLoader = () => <ContentLoader width={400} height={400} />;
 export const MyFacebookLoader = () => (
-  <Facebook title="Loading... Please wait" width={400} height={400} />
+  <Facebook
+    style={{ position: "absolute" }}
+    width={400}
+    height={400}
+    animate={true}
+  />
 );
-export const MyInstagramLoader = () => (
-  <Instagram title="Loading... Please wait" width={400} height={400} />
-);
+export const MyInstagramLoader = () => <Instagram width={400} height={400} />;

@@ -30,8 +30,8 @@ export const AllProjects: FC = () => {
 
   return (
     <>
-      {isLoading && <MyFacebookLoader />}
       {error && <div> Something wrong </div>}
+      {isLoading && <MyFacebookLoader />}
       <Swiper
         direction="vertical"
         slidesPerView={3}

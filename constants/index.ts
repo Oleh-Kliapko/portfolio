@@ -62,6 +62,38 @@ export const NavLinks: INavLink[] = [
   },
 ];
 
+export interface ICertificate {
+  id: number;
+  title: string;
+  link: string;
+  image: string;
+  date: string;
+}
+
+export const Certificates: ICertificate[] = [
+  {
+    id: 1,
+    title: "Certificate GOIT School",
+    link: "https://drive.google.com/file/d/1IwZoE4GpSptm8Z2RVK5cLS11CW7wMCq8/view?usp=sharing",
+    image: "/assets/certificates/goit.jpg",
+    date: "15.06.2023",
+  },
+  {
+    id: 2,
+    title: "React (Basic) Certificate",
+    link: "https://www.hackerrank.com/certificates/4716a20fd535",
+    image: "/assets/certificates/hackerRankReact.jpg",
+    date: "26.01.2024",
+  },
+  {
+    id: 3,
+    title: "JavaScript (Intermediate) Certificate",
+    link: "https://www.hackerrank.com/certificates/7044113f3790",
+    image: "/assets/certificates/hackerRankJS.jpg",
+    date: "26.01.2024",
+  },
+];
+
 export interface IServiceData {
   Icon: IconType;
   title: string;

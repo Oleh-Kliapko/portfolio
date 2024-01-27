@@ -8,6 +8,7 @@ import Particle from "@/components/Particle";
 import { Container } from "@/components/Container";
 
 import { myFace2, partBg } from "@/public/assets";
+import { CertificatesList } from "@/components/Certificates";
 
 interface TypewriterConfig {
   words: string[];
@@ -54,7 +55,10 @@ const Home: FC = () => {
         width={230}
         className="absolute left-0 top-0"
       />
-      <Container as="section" containerStyle="flex flex-col gap-8 z-[10]">
+      <Container
+        as="section"
+        containerStyle="flex flex-col gap-8 z-[10] justify-end"
+      >
         <div className="max-sm:text-wrap text-gray-200 xl:text-gray-400 xl:pb-2 max-sm:pr-20 max-w-[650px]">
           <h2 className="text-3xl max-sm:text-xl sm:flex sm:flex-col mb-8">
             <span>I am a </span>
@@ -82,6 +86,7 @@ const Home: FC = () => {
           </h3>
           <span className="text-red-500">Lucius Annaeus Seneca</span>
         </div>
+        <CertificatesList />
       </Container>
     </main>
   );

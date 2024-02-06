@@ -12,7 +12,7 @@ export const useFetch = () => {
 
   const checkImageExistence = async (url: string): Promise<boolean> => {
     try {
-      await axios.get(url, { timeout: 5000 });
+      await axios.get(url, { timeout: 1000 });
       return true;
     } catch (error: any) {
       return false;

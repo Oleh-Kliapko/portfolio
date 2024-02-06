@@ -3,7 +3,6 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
 import { IRepo } from "@/constants";
-import { formatDate } from "@/helpers/formatDate";
 import defaultLogo from "../public/assets/defaultLogo.jpeg";
 
 const AllProjectCard: FC<IRepo> = (project) => {

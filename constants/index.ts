@@ -72,13 +72,6 @@ export interface ICertificate {
 
 export const Certificates: ICertificate[] = [
   {
-    id: 1,
-    title: "Certificate GOIT School",
-    link: "https://drive.google.com/file/d/1IwZoE4GpSptm8Z2RVK5cLS11CW7wMCq8/view?usp=sharing",
-    image: "/assets/certificates/goit.jpg",
-    date: "15.06.2023",
-  },
-  {
     id: 2,
     title: "React (Basic) Certificate",
     link: "https://www.hackerrank.com/certificates/4716a20fd535",
@@ -92,6 +85,20 @@ export const Certificates: ICertificate[] = [
     image: "/assets/certificates/hackerRankJS.jpg",
     date: "26.01.2024",
   },
+  {
+    id: 4,
+    title: "Frontend Developer (React) Certificate",
+    link: "https://www.hackerrank.com/certificates/475c317f07f6",
+    image: "/assets/certificates/hackerRankReact2.jpg",
+    date: "06.02.2024",
+  },
+  {
+    id: 1,
+    title: "Certificate GOIT School",
+    link: "https://drive.google.com/file/d/1IwZoE4GpSptm8Z2RVK5cLS11CW7wMCq8/view?usp=sharing",
+    image: "/assets/certificates/goit.jpg",
+    date: "15.06.2023",
+  },
 ];
 
 export interface IServiceData {
@@ -104,7 +111,7 @@ export interface IServiceData {
 export const ServiceData: IServiceData[] = [
   {
     Icon: RxRocket,
-    title: "React + Redux",
+    title: "React + Redux Toolkit",
     content: "1 commercial project and 10+ pet-projects",
     backgroundImage: "/assets/space/SpaceCity1.jpeg",
   },
@@ -134,7 +141,7 @@ export const ServiceData: IServiceData[] = [
   },
   {
     Icon: RxBorderStyle,
-    title: "Tailwind, Chakra UI",
+    title: "Tailwind, Ant Design, Chakra UI",
     content: "1 commercial project and 10+ pet-projects",
     backgroundImage: "/assets/space/SpaceCity6.jpeg",
   },
@@ -261,6 +268,22 @@ export const Projects: IProject[] = [
   },
   {
     id: 6,
+    title: "Crypto companion app: practice being a trader using fake money",
+    links: [
+      {
+        git: "https://github.com/Oleh-Kliapko/crypto-app",
+        website: "https://crypto-app-taupe-eight.vercel.app/",
+      },
+    ],
+    images: [
+      "/assets/projects/crypto-app/crypto-1.jpg",
+      "/assets/projects/crypto-app/crypto-2.jpg",
+      "/assets/projects/crypto-app/crypto-3.jpg",
+      "/assets/projects/crypto-app/crypto-4.jpg",
+    ],
+  },
+  {
+    id: 7,
     title: "Filmoteka - the best movies of the world",
     links: [
       {
@@ -275,37 +298,6 @@ export const Projects: IProject[] = [
       "/assets/projects/filmoteka/film-4.jpg",
     ],
   },
-  {
-    id: 7,
-    title: "Movie searcher - find your favorite movie",
-    links: [
-      {
-        git: "https://github.com/Oleh-Kliapko/goit-react-hw-05-movies",
-        website: "https://oleh-kliapko.github.io/goit-react-hw-05-movies/",
-      },
-    ],
-    images: [
-      "/assets/projects/search-movies/movies-1.jpg",
-      "/assets/projects/search-movies/movies-2.jpg",
-      "/assets/projects/search-movies/movies-3.jpg",
-      "/assets/projects/search-movies/movies-4.jpg",
-    ],
-  },
-  // {
-  //   id: 999,
-  //   title: "... and more others",
-  //   links: [
-  //     {
-  //       git: "https://github.com/Oleh-Kliapko",
-  //     },
-  //   ],
-  //   images: [
-  //     "/assets/projects/SpaceCity1.jpeg",
-  //     "/assets/projects/SpaceCity2.jpeg",
-  //     "/assets/projects/SpaceCity3.jpeg",
-  //     "/assets/projects/SpaceCity.jpeg",
-  //   ],
-  // },
 ];
 
 export interface IOwner {
